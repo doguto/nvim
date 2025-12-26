@@ -1,7 +1,7 @@
 -- 基本設定
 vim.opt.number = true          -- 行番号を表示
 vim.opt.relativenumber = true  -- 相対行番号を表示
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 -- キーマップの例（最低限）
 vim.g.mapleader = " "
@@ -18,6 +18,13 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+vim.diagnostic.config({
+	underline = true,
+	virtual_text = false,
+	signs = false,
+	update_in_insert = false,
+	severity_sort = true,
+})
 
 -- 残りの設定ファイルの読み込み
 require("lazy").setup({
