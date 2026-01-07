@@ -2,6 +2,7 @@
 vim.opt.number = true          -- 行番号を表示
 vim.opt.relativenumber = true  -- 相対行番号を表示
 vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus" -- クリップボードを共有
 
 -- キーマップの例（最低限）
 vim.g.mapleader = " "
