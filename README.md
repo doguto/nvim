@@ -73,3 +73,4 @@ LSP がアタッチされたバッファでのみ有効
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Git 差分表示 |
 | [coc.nvim](https://github.com/neoclide/coc.nvim) | LSP クライアント (別系統) |
 | [copilot.vim](https://github.com/github/copilot.vim) | GitHub Copilot |
+
