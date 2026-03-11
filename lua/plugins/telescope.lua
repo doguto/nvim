@@ -1,4 +1,16 @@
 return {
     'nvim-telescope/telescope.nvim', tag = 'v0.2.0',
-    dependencies = { 'nvim-lua/plenary.nvim' }
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    },
+    keys = {
+        { '<S-t>', '<cmd>Telescope find_files<cr>', desc = 'ファイル検索' },
+        { '<S-f>', '<cmd>Telescope live_grep<cr>', desc = 'ファイル内検索' },
+    },
+    config = function()
+        local telescope = require('telescope')
+        telescope.setup({})
+        telescope.load_extension('fzf')
+    end,
 }

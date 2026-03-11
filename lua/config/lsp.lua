@@ -13,20 +13,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
     local buf = args.buf
 
-    -- デフォルトで設定されている言語サーバー用キーバインドに設定を追加する
-    -- See https://neovim.io/doc/user/lsp.html#lsp-defaults
-    -- 言語サーバーのクライアントがLSPで定められた機能を実装していたら設定を追加するという流れ
-
-    if client:supports_method("textDocument/definition") then
-      vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = buf, desc = "Go to definition" })
-    end
-
-    if client:supports_method("textDocument/hover") then
-      vim.keymap.set("n", "<leader>k",
-        function() vim.lsp.buf.hover({ border = "single" }) end,
-        { buffer = buf, desc = "Show hover documentation" })
-    end
-
     if client:supports_method("textDocument/completion") then
       vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
     end

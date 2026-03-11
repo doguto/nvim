@@ -4,10 +4,7 @@ vim.opt.relativenumber = true  -- 相対行番号を表示
 vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus" -- クリップボードを共有
 
--- キーマップの例（最低限）
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>w", ":w<CR>")
-vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- プラグインマネージャ lazy.nvim のセットアップ
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
