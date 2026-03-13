@@ -5,8 +5,8 @@ return {
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     },
     keys = {
-        { '<S-t>', '<cmd>Telescope find_files<cr>', desc = 'ファイル検索' },
-        { '<S-f>', '<cmd>Telescope live_grep<cr>', desc = 'ファイル内検索' },
+        { ';t', '<cmd>Telescope find_files<cr>', desc = 'ファイル検索' },
+        { ';f', '<cmd>Telescope live_grep<cr>', desc = 'ファイル内検索' },
     },
     config = function()
         local telescope = require('telescope')
