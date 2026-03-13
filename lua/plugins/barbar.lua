@@ -11,5 +11,7 @@ return {
   version = '^1.0.0',
   config = function(_, opts)
     require('barbar').setup(opts)
+    vim.keymap.set('n', '<Tab>', '<Cmd>BufferNext<CR>', { noremap = true, silent = true })
+    vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
   end,
 }
