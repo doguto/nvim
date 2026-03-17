@@ -2,9 +2,28 @@
 
 ## キーマップ一覧
 
+> `<Leader>` = `Space`
+
+### ファイル操作 (telescope.nvim)
+
 | キー | モード | 動作 | 設定ファイル |
 |------|--------|------|-------------|
-| `<S-f>` | Normal | ファイル検索 | `lua/plugins/telescope.lua` |
+| `;t` | Normal | ファイル検索 (find_files) | `lua/plugins/telescope.lua` |
+| `;f` | Normal | ファイル内検索 (live_grep) | `lua/plugins/telescope.lua` |
+
+### ファイルツリー (nvim-tree)
+
+| キー | モード | 動作 | 設定ファイル |
+|------|--------|------|-------------|
+| `;h` | Normal | NvimTree にフォーカス | `lua/plugins/nvim-tree.lua` |
+
+### タブ操作 (barbar.nvim)
+
+| キー | モード | 動作 | 設定ファイル |
+|------|--------|------|-------------|
+| `<Tab>` | Normal | 次のバッファへ | `lua/plugins/barbar.lua` |
+| `<S-Tab>` | Normal | 前のバッファへ | `lua/plugins/barbar.lua` |
+| `;w` | Normal | バッファを閉じる | `lua/plugins/barbar.lua` |
 
 ---
 
