@@ -29,19 +29,22 @@
 
 ## プラグイン一覧
 
-| プラグイン | 用途 |
-|-----------|------|
-| [lazy.nvim](https://github.com/folke/lazy.nvim) | プラグインマネージャー |
-| [catppuccin](https://github.com/catppuccin/nvim) | カラースキーム |
-| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | ステータスライン |
-| [barbar.nvim](https://github.com/romgrk/barbar.nvim) | タブバー |
-| [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) | ファイルツリー |
-| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | ファジーファインダー |
-| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | シンタックスハイライト |
-| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | LSP 設定 |
-| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) | 補完エンジン |
-| [LuaSnip](https://github.com/L3MON4D3/LuaSnip) | スニペット |
-| [nvim-autopairs](https://github.com/windwp/nvim-autopairs) | 括弧の自動補完 |
-| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Git 差分表示 |
-| [coc.nvim](https://github.com/neoclide/coc.nvim) | LSP クライアント (別系統) |
-| [copilot.vim](https://github.com/github/copilot.vim) | GitHub Copilot |
+| プラグイン | カテゴリ | 用途 |
+|-----------|----------|------|
+| [coc.nvim](https://github.com/neoclide/coc.nvim) | `coding` | LSP クライアント (別系統) |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) | `coding` | 補完エンジン |
+| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | `coding` | LSP 設定 |
+| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | `coding` | シンタックスハイライト |
+| [Comment.nvim](https://github.com/numToStr/Comment.nvim) | `tools` | コメントのトグル操作 |
+| [copilot.vim](https://github.com/github/copilot.vim) | `tools` | GitHub Copilot |
+| [git.nvim](https://github.com/dinhhuy258/git.nvim) | `tools` | Git 操作の統合 |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | `tools` | Git 差分表示 |
+| [nvim-autopairs](https://github.com/windwp/nvim-autopairs) | `tools` | 括弧の自動補完 |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | `tools` | ファジーファインダー |
+| [which-key.nvim](https://github.com/folke/which-key.nvim) | `tools` | キーバインドヘルプ表示 |
+| [barbar.nvim](https://github.com/romgrk/barbar.nvim) | `ui` | タブバー |
+| [catppuccin](https://github.com/catppuccin/nvim) | `ui` | カラースキーム |
+| [hlchunk.nvim](https://github.com/shellRaining/hlchunk.nvim) | `ui` | インデントガイドの可視化 |
+| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | `ui` | ステータスライン |
+| [markview.nvim](https://github.com/OXY2DEV/markview.nvim) | `ui` | Markdown のインラインレンダリング |
+| [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) | `ui` | ファイルツリー |
