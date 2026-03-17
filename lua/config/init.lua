@@ -6,6 +6,16 @@ vim.opt.clipboard = "unnamedplus" -- クリップボードを共有
 
 vim.g.mapleader = " "
 
+-- .lua ファイルのインデントを半角スペース2つに統一
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "lua",
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.expandtab = true
+  end,
+})
+
 -- プラグインマネージャ lazy.nvim のセットアップ
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -17,11 +27,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 vim.diagnostic.config({
-	underline = true,
-	virtual_text = false,
-	signs = false,
-	update_in_insert = false,
-	severity_sort = true,
+  underline = true,
+  virtual_text = false,
+  signs = false,
+  update_in_insert = false,
+  severity_sort = true,
 })
 
 -- 残りの設定ファイルの読み込み
