@@ -35,6 +35,7 @@
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) | `coding` | 補完エンジン |
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | `coding` | LSP 設定 |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | `coding` | シンタックスハイライト |
+| [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) | `coding` | HTML/JSXタグの自動補完 |
 | [Comment.nvim](https://github.com/numToStr/Comment.nvim) | `tools` | コメントのトグル操作 |
 | [copilot.vim](https://github.com/github/copilot.vim) | `tools` | GitHub Copilot |
 | [git.nvim](https://github.com/dinhhuy258/git.nvim) | `tools` | Git 操作の統合 |

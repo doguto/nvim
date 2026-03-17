@@ -11,7 +11,7 @@ import os
 import re
 import glob
 
-NVIM_ROOT = os.path.dirname(os.path.abspath(__file__))
+NVIM_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PLUGINS_DIR = os.path.join(NVIM_ROOT, "lua/plugins")
 README_PATH = os.path.join(NVIM_ROOT, "README.md")
 SECTION_HEADER = "## プラグイン一覧"
