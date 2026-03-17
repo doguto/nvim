@@ -36,6 +36,8 @@ vim.diagnostic.config({
 
 -- 残りの設定ファイルの読み込み
 require("lazy").setup({
-  { import = "plugins" },
+  { import = "plugins.ui" },
+  { import = "plugins.tools" },
+  { import = "plugins.coding" },
 })
 
