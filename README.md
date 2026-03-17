@@ -30,6 +30,20 @@
 |------|--------|------|-------------|
 | `;c` | Normal | カラーコード表示トグル | `lua/plugins/ui/colorizer.lua` |
 
+### ジャンプ移動
+
+| キー | モード | 動作 | 設定ファイル |
+|------|--------|------|-------------|
+| `;a` | Normal | ジャンプリストを前へ戻る (`<C-o>`) | `lua/config/init.lua` |
+| `;d` | Normal | ジャンプリストを次へ進む (`<C-i>`) | `lua/config/init.lua` |
+
+### LSP (nvim-lspconfig)
+
+| キー | モード | 動作 | 設定ファイル |
+|------|--------|------|-------------|
+| `gd` | Normal | 定義へジャンプ | `lua/config/lsp.lua` |
+| `gr` | Normal | シンボルのリネーム | `lua/config/lsp.lua` |
+
 ### タブ操作 (barbar.nvim)
 
 | キー | モード | 動作 | 設定ファイル |

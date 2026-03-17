@@ -17,6 +17,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
       vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
     end
 
+    -- LSP キーマップ
+    local opts = { buffer = buf, noremap = true, silent = true }
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, vim.tbl_extend("force", opts, { desc = "定義へジャンプ" }))
+    vim.keymap.set("n", "gr", vim.lsp.buf.rename, vim.tbl_extend("force", opts, { desc = "リネーム" }))
+
     -- Auto-format ("lint") on save.
     -- Usually not needed if server supports "textDocument/willSaveWaitUntil".
     if not client:supports_method("textDocument/willSaveWaitUntil")

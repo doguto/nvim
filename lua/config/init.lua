@@ -34,6 +34,10 @@ vim.diagnostic.config({
   severity_sort = true,
 })
 
+-- ジャンプリスト移動
+vim.keymap.set("n", ";a", "<C-o>", { noremap = true, silent = true, desc = "ジャンプリスト: 前へ" })
+vim.keymap.set("n", ";d", "<C-i>", { noremap = true, silent = true, desc = "ジャンプリスト: 次へ" })
+
 -- 残りの設定ファイルの読み込み
 require("lazy").setup({
   { import = "plugins.ui" },
