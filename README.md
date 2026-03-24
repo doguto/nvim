@@ -44,6 +44,15 @@
 | `gd` | Normal | 定義へジャンプ | `lua/config/lsp.lua` |
 | `gr` | Normal | シンボルのリネーム | `lua/config/lsp.lua` |
 
+### 補完操作 (nvim-cmp)
+
+| キー | モード | 動作 | 設定ファイル |
+|------|--------|------|-------------|
+| `<C-y>` | Insert | 補完候補を確定 | `lua/plugins/coding/nvim-cmp.lua` |
+| `<C-e>` | Insert | 補完を閉じる | `lua/plugins/coding/nvim-cmp.lua` |
+| `<C-n>` | Insert | 次の候補へ | `lua/plugins/coding/nvim-cmp.lua` |
+| `<C-p>` | Insert | 前の候補へ | `lua/plugins/coding/nvim-cmp.lua` |
+
 ### タブ操作 (barbar.nvim)
 
 | キー | モード | 動作 | 設定ファイル |
